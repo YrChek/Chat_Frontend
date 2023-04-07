@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    const ws = new WebSocket('ws://my-first-chat.onrender.com/app');
+    const ws = new WebSocket('wss://my-first-chat.onrender.com/app');
     const listUsers = await response.json();
     regist.widjet.remove();
     const chat = new Chat(nik, ws);
